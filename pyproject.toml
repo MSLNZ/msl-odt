@@ -1,0 +1,94 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+# Note lots of this is copied and modified from an existing pyproject.toml
+name = "msl-odt"
+# Using version == dynamic means it gets the version from github
+# and ideally it would be good if this somehow linked into tags
+# so that if you gave a tag of, e.g. v1.2.3 then this would get
+# picked up as the version and any commits after that tag were
+# not included in the build. Not sure how to do that so for now
+# just use a static version
+#dynamic = ["version"]
+version = "1.0"
+# not entirely sure how to specify dependencies
+# but looking in the pyproject.toml for msl-nlf 
+#it looks like it should be
+dependencies = ["odfpy"]
+# It's possible msl-odt would run on an earlier verion
+requires-python = ">= 3.8"
+description = "Write Open Document Foundation documents with Python."
+license = {file = "LICENSE.txt"}
+readme = "README.md"
+keywords = [".odt", "Open Office", "Open Document Foundation", "MSL"]
+authors = [
+  {name = "Measurement Standards Laboratory of New Zealand", email = "info@measurement.govt.nz"},
+]
+maintainers = [
+  {name = "Adam Dunford", email = "adam.dunford@measurement.govt.nz"},
+]
+
+# Not sure about the 'Development Status'
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development",
+]
+
+[project.urls]
+Changelog = "https://mslnz.github.io/msl-odt/about/release-notes/"
+Documentation = "https://mslnz.github.io/msl-odt/"
+Homepage = "https://mslnz.github.io/msl-odt/"
+Issues = "https://github.com/MSLNZ/msl-odt/issues"
+Source = "https://github.com/MSLNZ/msl-odt"
+
+[project.optional-dependencies]
+tests = [
+  "pytest",
+]
+docs = [
+  "black",                     # Code formatting
+  "mkdocs",                    # MkDocs for documentation generation
+  "mkdocs-material",           # Material theme for MkDocs
+  "mkdocstrings-python",       # Generate docs from Python docstrings
+  "pymdown-extensions",        # For all the pymdownx bits
+  "markdown",
+]
+dev = [
+  "msl-odt[tests,docs]",
+]
+
+[tool.hatch.version]
+source = "vcs"
+
+[tool.hatch.build.hooks.vcs]
+version-file = "src/msl/odt/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/msl"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "--maxfail=1 --disable-warnings"
+#addopts = [
+#  "--cov=src",
+#  "--cov-report=html",
+#  "--verbose",
+#  "--import-mode=importlib",
+#]
+
+#consider_namespace_packages = true
