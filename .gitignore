@@ -3,6 +3,7 @@ __pycache__/
 
 # Global files
 *.py[codz]
+*.bak
 
 # Root directories
 # May or may not exist - exclude anyway
