@@ -46,10 +46,10 @@ doc.addtext('The format for the equation_string input follows the '
             'https://wiki.openoffice.org/wiki/Documentation/'
             'OOoAuthors_User_Manual/Writer_Guide/Math_commands_-_Reference \n'
             'for details on the command set.\n'
-            'The syntax is not too disimilar to LaTex syntax for math.\n'
+            'The syntax is not too dissimilar to LaTex syntax for math.\n'
             'A few useful points:')
 doc.addbulletedlist([
-            'In general, greek letters are specified as %letter for lower '
+            'In general, Greek letters are specified as %letter for lower '
             'case and %LETTER for upper case. E.g. %alpha and %OMEGA.',
             'Most characters will be italicised, as usual for equation text, '
             'to use normal text surround it with \'"\' characters. '
@@ -57,7 +57,7 @@ doc.addbulletedlist([
             'To group operators or operations, e.g. for a fraction which '
             'is specified as numerator over denominator, enclose items in '
             'braces \'{ }\'. E.g. {a+b+c} over {e+f+g}',
-            'Superscripts are signified with the \'^\' charachter and '
+            'Superscripts are signified with the \'^\' character and '
             'subscripts with the \'_\' character. E.g. the area of a circle '
             'would be specified as "%pi times r^3" where r is the radius',
             'Stacking of equations can either be done \'manually\' - by '
@@ -93,7 +93,7 @@ doc.addtext('Note 1: no sizing\n'
             'Note 2: double-clicking on the above equation in Apache '
             'Open Office will open the equation editor. When this is closed '
             'and focus returns to the main document the frame containing the '
-            'equation will be auto-resized to a minumum bounding box.\n'
+            'equation will be auto-resized to a minimum bounding box.\n'
             'With no height applied:')
 doc.addtext(f"doc.addequation('{equation}', math_width=\"4cm\", wrap=True)")
 doc.addequation(equation, math_width="4cm", wrap=True)

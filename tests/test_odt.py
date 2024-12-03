@@ -34,7 +34,7 @@ Test Cases:
 - test_metadata: Validates that the title and creator metadata in both files
   match.
 
-The module uses a class to parametise the tests so they can be run on multiple
+The module uses a class to parametrise the tests so they can be run on multiple
 example files without needing to duplicate the tests in multiple files.
 
 Usage:
@@ -100,7 +100,7 @@ def setup_test_files():
                 test_file.unlink()
 
 
-@pytest.mark.parametrize("example_type", EXAMPLE_TYPES)
+@pytest.mark.parameterise("example_type", EXAMPLE_TYPES)
 class TestOdtFiles:
     """Tests for verifying contents of generated .odt files against expected."""
 

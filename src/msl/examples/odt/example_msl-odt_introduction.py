@@ -19,7 +19,7 @@ doc.addtext('This document shows how to add simple text to an '
             )
 
 doc.addheading2('Open Document Foundation text')
-doc.addtext('A .odt file is simply a renamed zip file containing xml code '
+doc.addtext('An .odt file is simply a renamed zip file containing .xml code '
             'which various editors can display in a human-readable form. '
             'This can be seen by renaming a .odt file with a .zip extension. '
             'If the file is opened with a suitable archive program it will '
@@ -54,7 +54,7 @@ doc.addtext('Using odt and Python to write out Open Document (.odt) files '
 doc.addpagebreak()
 
 doc.addheading2('Adding text')
-doc.addtext('The addtext() and other functions usully create new paragraphs. '
+doc.addtext('The addtext() and other functions usually create new paragraphs. '
             'The input to addtext() can be formatted using escape sequences '
             'such as "\\n" (Newline) and "\\t" (Horizontal tab). E.g. '
             'this text "Lorem ipsum \\n\\tDolor sit amet \\n\\tConsecuter '
@@ -66,4 +66,4 @@ doc.addtext('\n')
 
 doc.addheading2('Adding the rest')
 doc.addtext('For examples of how to add Equations, Figures, Tables and Lists, '
-            'using Python and the odt module, see the other example scripts.')
+            'using Python and the msl-odt module, see the other example scripts.')

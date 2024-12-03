@@ -44,7 +44,7 @@ doc.addheading2('Example images')
 TESTCARD_1 = 'Sweden_TV1_colour_1969.png'
 TESTCARD_2 = 'PM5544_with_non-PAL_signals.png'
 
-doc.addtext('The following images are publically available:')
+doc.addtext('The following images are publicly available:')
 doc.addnumberedlist([
     'htps://commons.wikimedia.org/wiki/File:Sweden_TV1_colour_1969.png',
     'https://commons.wikimedia.org/wiki/File:PM5544_with_non-PAL_signals.png'])

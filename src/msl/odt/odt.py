@@ -424,7 +424,7 @@ class Document(object):
         if Path(image_filename).exists():
             picref = self.doc.addPicture(image_filename)  # add picture to file
             # Clean up filename to make it valid as a frame name
-            # allowing alphanumeric, underscore and hypen characters
+            # allowing alphanumeric, underscore and hyphen characters
             # and substituting underscores (_) for all others.
             frame_name = substitute(r'[^a-zA-Z0-9]', '_',
                                     Path(image_filename).stem)
