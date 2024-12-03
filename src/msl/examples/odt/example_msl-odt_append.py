@@ -63,8 +63,7 @@ doc.addtext(f'Note: default cell text padding is {doc.tablecellpadding}.\n')
 
 doc.addheading2('Example3')
 doc.addtext('Total table width with no decimal tabs or borders')
-example_3 = '''doc.addtable(table_data, table_width=14)'''
-doc.addtext(example_3)
+doc.addtext('doc.addtable(table_data, table_width=14)')
 doc.addtable(table_data, table_width=14)
 doc.addtext('Note: table width needs to be sufficient or text will wrap.\n'
             'Further details can be found in odt.py')

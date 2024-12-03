@@ -69,7 +69,6 @@ doc.addtext('Note 2: equivalent to doc.addlist(item_list, '
             'item_level=None, list_style="bullet").\n')
 doc.addheading2('Example 2')
 doc.addtext('Basic numbered list')
-example_command = '''doc.addnumberedlist(item_list)'''
 doc.addtext('doc.addnumberedlist(item_list)')
 doc.addnumberedlist(item_list)
 doc.addtext('Note 1: all items at top level.')
@@ -77,7 +76,6 @@ doc.addtext('Note 2: equivalent to doc.addlist(item_list, '
             'item_level=None, list_style="number").\n')
 doc.addheading2('Example 3')
 doc.addtext('Bulleted list with sub-levels')
-example_command = ''''''
 doc.addtext('doc.addlist(item_list, '
             'item_level=item_level, list_style="bullet")')
 doc.addlist(item_list, item_level=item_level, list_style="bullet")
@@ -85,7 +83,6 @@ doc.addtext('Note: uses Open Office default bullet labels and indent.\n')
 
 doc.addheading2('Example 4')
 doc.addtext('Numbered list with sub-levels')
-example_command = ''
 doc.addtext('doc.addlist(item_list, '
             'item_level=item_level, list_style="number")')
 doc.addlist(item_list, item_level=item_level, list_style="number")
@@ -96,7 +93,6 @@ doc.addtext('Note: uses Open Office default indent '
 doc.addpagebreak()
 doc.addheading2('Example 5')
 doc.addtext('The Default')
-example_command = ''
 doc.addtext('doc.addlist(item_list)')
 doc.addlist(item_list)
 doc.addtext('Note: equivalent to doc.addlist(item_list, '
