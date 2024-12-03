@@ -100,7 +100,7 @@ def setup_test_files():
                 test_file.unlink()
 
 
-@pytest.mark.parameterise("example_type", EXAMPLE_TYPES)
+@pytest.mark.parameterize("example_type", EXAMPLE_TYPES)
 class TestOdtFiles:
     """Tests for verifying contents of generated .odt files against expected."""
 
