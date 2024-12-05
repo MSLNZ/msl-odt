@@ -29,6 +29,9 @@ pip install msl-odt
 ```
 
 ## Examples
-Examples on how to use the code are available in the `msl-odt` [repository](https://github.com/MSLNZ/msl-odt/tree/main/src/msl/examples/odt) and these examples are also included with the `msl-odt` installation in the `../site-packages/msl/examples/msl-odt` directory of your Python interpreter.
+[Examples](https://mslnz.github.io/msl-odt/examples/msl-odt_introduction/) on how to use the code are available 
+in the `msl-odt` [repository](https://github.com/MSLNZ/msl-odt/tree/main/src/msl/examples/odt) and these examples 
+are also included with the `msl-odt` installation in the `../site-packages/msl/examples/msl-odt` 
+directory of your Python interpreter.
 
 The examples are provided as `Python` to allow users to cut-and-paste into their own code.
