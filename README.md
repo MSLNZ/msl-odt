@@ -25,7 +25,7 @@
 To install the module, using `pip`:
 
 ```console
-pip install odfpy
+pip install msl-odt
 ```
 
 ## Examples
