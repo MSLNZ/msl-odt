@@ -55,7 +55,7 @@ nav:
 markdown_extensions:
   - attr_list           # enables: [link](url){:target="_blank"}
   - codehilite:
-      linenums: true
+      linenums: false
   - pymdownx.snippets:  # enables: --8<--
       check_paths: true
   - toc:
