@@ -355,9 +355,9 @@ class Document(object):
         Parameters
         ----------
         text : str
-            Text to add. The use of `\t` and `\n` are supported.
+            Text to add. The use of ``\t`` and ``\n`` are supported.
             Uses ODFPY `teletype` function to handle whitespace.
-            Detects URLs starting with `http://` or `https://`
+            Detects URLs starting with ``http://`` or ``https://``
             and converts them to hyperlinks.
         
         Returns
