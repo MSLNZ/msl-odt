@@ -350,7 +350,7 @@ class Document(object):
 
     def addtext(self, text: str) -> None:
         """
-        Add a new paragraph to document
+        Add a new paragraph to document.
 
         Parameters
         ----------
@@ -359,6 +359,7 @@ class Document(object):
             Uses ODFPY `teletype` function to handle whitespace.
             Detects URLs starting with `http://` or `https://`
             and converts them to hyperlinks.
+        
         Returns
         -------
         None.
