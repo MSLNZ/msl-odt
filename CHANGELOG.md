@@ -4,22 +4,26 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.0.0] - 2024-10-18
+## [1.0] - 2024-12-18
+
 ### Added
 - Initial release of the `msl-odt` PyPi module.
-- Basic functionality for reading and writing to ODT files.
+- Basic functionality for reading and writing to `.odt` files.
 
 ### Changed
-- [2020] Very first version 2020 by Adam D
-- [2024 August] Added equation mathHeight by Cheng Y
-- [2024 September] by Adam D 
-  - Added tables, minor formatting, and table creation utility
-  - Added warnings for problematic parameters
-  - Used PEP8 case convention (lowercase or snake_case) as opposed to CamelCase which previous functions have used. (Eventually other functions should be re-written to conform with PEP8 and also annotations (PEP484))
+- [2020] Initial stand-alone development in 2020
+- [2024 August] Add mathHeight parameter to addequation()
+- [2024 September]
+  - Add tables, minor formatting, and table creation utility
+  - Add warnings for problematic parameters
+  - Modify to use PEP8 case convention (lowercase or snake_case).
+- [2024 November]
+  - Develop tests and example files
+  - Configure for PyPi and Github
 
 ### Fixed
-- Initial implementation had issues with hyperlink detection in `addtext`, which was fixed to properly format detected URLs as clickable links
-- Appending to existing document needed an additional utility function to pick up styles for previous tables so that new table styles didn't overwrite them
+- Initial stand-alone version had issues with hyperlink detection in `addtext()`. This was fixed to properly format detected URLs as clickable links in the `.odt` document
+- Appending to existing document required an additional utility function to read existing styles for previous tables so new table styles didn't overwrite or conflict with them.
 
 ### Deprecated
 - None at this time.
@@ -30,9 +34,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 ## [Unreleased]
 
 ### Added 
-- Enhancements to allow richer text formatting, including bold, italic, and other styles for paragraphs
+- Enhancements for richer text formatting, e.g. bold, italic, etc. in paragraphs
 
 ### Changed
-- Improvements for the `addtext` method to support different link formats, like email addresses
-- Refactoring code for better modularity and test coverage
-
+- Improve `addtext()` to support different link formats, e.g. email addresses
+- Refactor code to improve modularity
+- Extend test coverage
