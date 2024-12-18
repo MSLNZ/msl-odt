@@ -10,14 +10,10 @@ except ImportError as error:
                       "Please install it first.") from error
 from pathlib import Path
 from shutil import copy
-from subprocess import run
 
 source_filename = Path("example_msl-odt_readme.odt")  # The source file
+assert source_filename.exists(), "example_msl-odt_readmme.odt does not exist."
 filename = Path("example_msl-odt_append.odt")  # Filename for append
-if not source_filename.exists():
-    print(f"{source_filename} does not exist. Creating it now.")
-    run(["python", "example_msl-odt_tables.py"],  # run example_msl-odt_tables
-        check=True)
 copy(source_filename, filename)
 
 doc = Document(filename, reopen=True)
