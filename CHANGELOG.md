@@ -12,7 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ### Changed
   - [2020] Initial stand-alone development
-  - [2024 August] Add mathHeight parameter to `addequation()`
+  - [2024 August] Add `mathHeight` parameter to `addequation()`
   - [2024 September]
     - Add tables, minor formatting, and table creation utility
     - Add warnings for problematic parameters
@@ -22,7 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
     - Configure for `PyPi` and `Github`
 
 ### Fixed
-- Initial stand-alone version had issues with hyperlink detection in `addtext()`. This was fixed to properly format detected URLs as clickable links in the `.odt` document
+- Initial stand-alone version had issues with hyperlinks in `addtext()`. Fixed to properly format detected URLs as clickable links in the `.odt` document
 - Appending to existing document required an additional utility function to read existing styles for previous tables so new table styles didn't overwrite or conflict with them.
 
 ### Deprecated
