@@ -16,7 +16,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - [2024 September]
   - Add tables, minor formatting, and table creation utility
   - Add warnings for problematic parameters
-  - Modify to use PEP8 case convention (lowercase or snake_case).
+  -  Modify to use PEP8 case convention (lowercase or snake_case).
 - [2024 November]
   - Develop tests and example files
   - Configure for PyPi and Github
