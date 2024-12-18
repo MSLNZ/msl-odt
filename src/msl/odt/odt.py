@@ -557,7 +557,12 @@ class Document(object):
 
     def initialize_table_count(self) -> None:
         """
-        Update table_count if there are any existing tables.
+        Update `table_count` if there are any existing tables.
+        
+        Each table has a unique style named based on the table count.
+        When appending to a document it is necessary to first count 
+        existing tables to ensure styles of any new tables do not overwrite
+        previous table styles.
 
         Returns
         -------
@@ -590,7 +595,8 @@ class Document(object):
             e.g.: `[f'{i:0.2f} for i in my_variable]`
                   `[f'{i:0.4E} for i in my_variable]`
                   etc.
-        And optional header row can be supplied as the last argument.
+        
+        An optional header row can be supplied as the last argument.
         It must be supplied as a keyword argument e.g.:
             `maketabledata(col1, col2, header_row=['Name', 'Age'])`
 
@@ -613,7 +619,7 @@ class Document(object):
                                                               column2data)`
         Returns
         -------
-        list of list : Row-major data where each inner list
+        list of list : Row-major data where each inner list \
                        represents a row of the table.
         """
         # Ensure all arguments have the same length
