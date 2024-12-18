@@ -11,15 +11,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Basic functionality for reading and writing to `.odt` files.
 
 ### Changed
-- [2020] Initial stand-alone development
-- [2024 August] Add mathHeight parameter to addequation()
-- [2024 September]
-  - Add tables, minor formatting, and table creation utility
-  - Add warnings for problematic parameters
-  - Modify to use PEP8 case convention (lowercase or snake_case).
-- [2024 November]
-  - Develop tests and example files
-  - Configure for PyPi and Github
+  - [2020] Initial stand-alone development
+  - [2024 August] Add mathHeight parameter to addequation()
+  - [2024 September]
+    - Add tables, minor formatting, and table creation utility
+    - Add warnings for problematic parameters
+    - Modify to use PEP8 case convention (lowercase or snake_case)
+  - [2024 November]
+    - Develop tests and example files
+    - Configure for PyPi and Github
 
 ### Fixed
 - Initial stand-alone version had issues with hyperlink detection in `addtext()`. This was fixed to properly format detected URLs as clickable links in the `.odt` document
